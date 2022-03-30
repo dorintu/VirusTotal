@@ -13,6 +13,6 @@ The program assumes that the user will use the on-going function whenever he ent
 The sites can be: new sites that have not yet been tested, or sites that have been tested before.
 
 The program checks the sites it received in the input file according to the following logic:
-* If these are sites that have not been reviewed yet (i.e. do not exist in the URLs_Status file) - check them and insert a new line into the URLs_Status file with their data
-* If these sites have not been tested for more than 30 minutes (i.e. their Sample_Time - sysdate > 30 minutes), check them and update their data
-* If these are sites that have been tested in the last half hour do nothing for them
+* If this is a site that has not yet been tested (i.e. does not exist in the URLs_Status file) - check it and add a new line to the URLs_Status file with its data
+* If this is a site that has not been tested for more than 30 minutes (i.e. sysdate - their Sample_Time > 30 minutes), check it and update its data
+* If it's a site that has been tested for the last half hour you will not do anything
