@@ -15,4 +15,4 @@ The sites can be: new sites that have not yet been tested, or sites that have be
 The program checks the sites it received in the input file according to the following logic:
 * If this is a site that has not yet been tested (i.e. does not exist in the URLs_Status file) - check it and add a new line to the URLs_Status file with its data
 * If this is a site that has not been tested for more than 30 minutes (i.e. sysdate - their Sample_Time > 30 minutes), check it and update its data
-* If this is a site that has been tested for the last half hour you will not do anything
+* If this is a site that has been tested for the last half hour nothing will be done
